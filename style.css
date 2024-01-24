@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #31304D;
+    --second-color: #F6F6F6;
+    --third-color: #FF004D;
+    --hover-color: #272727;
+
+    --primary-font: 'Krona One', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+}
+
+/**************************************************HEADER**********************************************************/
+header {
+    padding: 2% 0 0 15%;
+}
+nav {
+    display: flex;
+    gap: 80px;
+}
+
+nav .header__nav__link {
+    font-family: var(--second-font);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--third-color);
+}
+
+/***************************************************MAIN************************************************************/
+main {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+#presentation__content {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#presentation__content h1 {
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+#presentation__content strong {
+    color: var(--third-color);
+}
+
+#presentation__content p {
+    font-family: var(--second-font);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#presentation__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+#presentation__links h2 {
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.presentation__links__link {
+    font-family: var(--second-font);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--second-color);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 8px;
+    width: 378px;
+    padding: 21.5px 0;
+}
+
+.presentation__links__link:hover {
+    background-color: var(--third-color);
+}
+
+/********************************************************FOOTER****************************************/
+footer {
+    background-color: var(--third-color);
+}
+
+footer p {
+    font-family: var(--second-font);
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    pad: 24px;
+}
